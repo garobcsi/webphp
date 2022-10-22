@@ -25,7 +25,7 @@ A `-d` hatására a háttérben indul, visszakapjuk a konzolt.
 
 Hiba esetén a `docker-compose logs` által lehet megtekinteni a konténerek által logolt adatokat.
 
-## Etc: 
+## Etc
 
 `docker compose exec php fish` open shell
 
