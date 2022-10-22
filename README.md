@@ -24,3 +24,18 @@ A `-d` hatására a háttérben indul, visszakapjuk a konzolt.
 ## Hibakeresés
 
 Hiba esetén a `docker-compose logs` által lehet megtekinteni a konténerek által logolt adatokat.
+
+## Etc: 
+
+`docker compose exec php fish` open shell
+if json exists do `composer install`
+else `composer require filp/whoops`
+and `composer dump-autoload -o` (to autoload classes)
+
+import whoops in php:
+```
+require_once('./vendor/autoload.php'); 
+$whoops = new \Whoops\Run;
+$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+$whoops->register();
+```
