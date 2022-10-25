@@ -42,3 +42,12 @@ $whoops = new \Whoops\Run;
 $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
 $whoops->register();
 ```
+
+composer.json : Uses psr-4
+```
+"autoload": {
+        "psr-4": {
+            "NameSpace\\" : "src/NameSpace"
+        }
+    }
+```
